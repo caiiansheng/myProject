@@ -20,6 +20,7 @@ phases:
     commands:
       - echo ##### mvn install ####
       - mvn install -X
+      - mvn package
       - echo #### docker build ####
       - docker build -t clj/repo .
       - docker tag clj/repo:latest 585607119391.dkr.ecr.us-west-2.amazonaws.com/clj/repo:latest 
