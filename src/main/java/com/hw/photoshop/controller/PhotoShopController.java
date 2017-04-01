@@ -14,6 +14,7 @@ public class PhotoShopController {
 	@RequestMapping("/")
 	public String hello(){
 		return pro.getSimpleProp();
+		
 	}
 
 }
