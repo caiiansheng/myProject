@@ -9,6 +9,7 @@ COPY target/photoshop-0.0.1-SNAPSHOT.jar /tmp/photoshop-0.0.1-SNAPSHOT.jar
 RUN ls /tmp/
 CMD ["sleep","3000"]
 # Upgrading system
+RUN apt-get install yum
 RUN yum -y upgrade
 RUN yum -y install wget
 
