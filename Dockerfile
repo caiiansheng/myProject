@@ -9,10 +9,10 @@ COPY target/photoshop-0.0.1-SNAPSHOT.jar /tmp/photoshop-0.0.1-SNAPSHOT.jar
 RUN ls /tmp/
 CMD ["sleep","3000"]
 # Downloading & Config Java 8
-RUN sudo add-apt-repository ppa:webupd8team/java
-RUN sudo apt-get update
-RUN sudo apt-get install oracle-java8-installer
-RUN sudo apt-get install oracle-java8-set-default
+RUN add-apt-repository ppa:webupd8team/java
+RUN apt-get update
+RUN apt-get install oracle-java8-installer
+RUN apt-get install oracle-java8-set-default
 RUN echo "----------RUN JAVA-------------------"
 RUN JAVA
 #RUN wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/$JAVA_VERSION-$BUILD_VERSION/jdk-$JAVA_VERSION-linux-x64.rpm" -O /tmp/jdk-8-linux-x64.rpm
