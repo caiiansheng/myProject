@@ -10,7 +10,7 @@ COPY target/photoshop-0.0.1-SNAPSHOT.jar /tmp/photoshop-0.0.1-SNAPSHOT.jar
 #RUN apt-get -y install wget
 
 
-RUN rm /var/lib/dpkg/oracle-java8-installer*
+#RUN rm /var/lib/dpkg/info/oracle-java8-installer*
 RUN apt-get purge oracle-java8-installer* 
 RUN rm /etc/apt/sources.list.d/*java*  
 RUN apt-get update
