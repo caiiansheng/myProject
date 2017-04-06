@@ -15,7 +15,7 @@ RUN apt-get -y install wget
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:webupd8team/java
 RUN apt-get update
-RUN apt-get install oracle-java8-installer
-RUN apt-get install oracle-java8-set-default
+RUN apt-get -y install oracle-java8-installer
+RUN apt-get -y install oracle-java8-set-default
 
 EXPOSE 8080
